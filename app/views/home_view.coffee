@@ -85,7 +85,7 @@ module.exports = class HomeView extends View
     mesh.receiveShadow = false
 
     sound   = _.shuffle(['one','two','three','four'])[0]
-    s       = new buzz.sound("/sounds/#{sound}.ogg");
+    s       = new buzz.sound("sounds/#{sound}.ogg");
     s.setVolume(8)
     s.play() if @model.get('muted') is false
 
